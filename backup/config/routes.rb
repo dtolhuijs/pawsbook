@@ -2,8 +2,7 @@ Rails.application.routes.draw do
 
   get 'users' => 'user#index'
 
-  #root 'user#index'
-  root 'user#landingspage'
+  root 'user#index'
 
 
 
