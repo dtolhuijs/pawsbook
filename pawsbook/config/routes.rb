@@ -1,10 +1,23 @@
 Rails.application.routes.draw do
 
   get 'users' => 'user#index'
+<<<<<<< HEAD
   get 'search' => 'user#search'
   get 'login' => 'user#login'
   get 'register' => 'user#register'
 
+=======
+  get 'user/:id' => 'user#show', as: :user
+
+  get 'users/new' => "user#new", as: :new_user
+  get 'users/:id/edit' => 'user#edit', as: :edit_user
+  post 'users' => "user#create"
+  patch 'users/:id' => "user#update"
+  delete 'users/:id' => "user#destroy"
+
+
+
+>>>>>>> d562e67f7887ad223a4ea8472dc1fc3ae6ddf3ae
   #root 'user#index'
   root 'user#landingspage'
 

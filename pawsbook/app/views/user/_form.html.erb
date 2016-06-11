@@ -1,0 +1,14 @@
+<%= form_for @user do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :animal %>
+    <%= f.text_field :animal, size: 15 %>
+
+    <%= f.label :gender %>
+    <%= f.text_field :gender, size: 20 %>
+
+    <%= f.submit (@user.new_record? ? "Create" : "Update") %>
+
+<% end %>
