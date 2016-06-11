@@ -1,7 +1,7 @@
 class UserController < ApplicationController
 
   def index
-    @users = User.all
+    @user = User.all
   end
 
   def show
@@ -20,5 +20,5 @@ class UserController < ApplicationController
      end
      erb :'user/results'
     end
-  end
+
 end
