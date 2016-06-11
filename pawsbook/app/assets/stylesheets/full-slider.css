@@ -1,15 +1,8 @@
-// Place all the styles related to the user controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-.btn-custom{
-margin-left:10px;
-color: lawngreen;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
+/*!
+ * Start Bootstrap - Full Slider HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
 
 html,
 body {
