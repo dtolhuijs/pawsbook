@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get 'users' => 'user#index'
+  get 'search' => 'user#search'
 
   #root 'user#index'
   root 'user#landingspage'
