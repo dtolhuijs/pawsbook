@@ -2,7 +2,8 @@
 <h1>Users</h1>
 
 <% @users.each do |user| %>
-<<<<<<< HEAD
+    <p><%= link_to user.name, user_path( user.id ) %></p>
+
     <!-- <img src = "<%= user.picture%>"> -->
     <% user.pictures.each do |pic| %>
       <%= pic.id %>
@@ -11,11 +12,6 @@
     <h2><%= user.name %></h2>
     <p> <%= user.gender%></p>
 <% end %>
-</div>
-=======
-    <p><%= link_to user.name, user_path( user.id ) %></p>
-
-<% end %>
 
 <%= link_to "[New User]", new_user_path %>
->>>>>>> d562e67f7887ad223a4ea8472dc1fc3ae6ddf3ae
+</div>
