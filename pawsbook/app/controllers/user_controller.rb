@@ -1,7 +1,4 @@
 class UserController < ApplicationController
-<<<<<<< HEAD
-  
-=======
 
   def index
     @user = User.all
@@ -24,5 +21,4 @@ class UserController < ApplicationController
      erb :'user/results'
     end
 
->>>>>>> a02988c03d7670383f9aaef3bd114818792e1f83
 end
