@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   get 'users' => 'user#index'
   get 'search' => 'user#search'
+  get 'login' => 'user#login'
+  get 'register' => 'user#register'
 
   #root 'user#index'
   root 'user#landingspage'
