@@ -7,7 +7,6 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <!-- Latest compiled and minified CSS -->
-<<<<<<< HEAD
   </head>
 <body>
 
@@ -17,7 +16,7 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                         <a class="navbar-brand" href="#">
-              <img height="20" width="20" alt="Brand" src="assets/cat-paw.png">
+              <img class="custom" height="20" width="20" alt="Brand" src="assets/cat-paw.png">
             </a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -29,19 +28,19 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                
+
                 <form class="navbar-form navbar-right">
                     <div class="input-group">
                     <span class="input-group-btn">
                         <input type="text" name="keyword" placeholder="search..." class="form-control">
                         <span>
-                        <button class="btn btn-default"><%= link_to 'Go', 'search' %></button>
+                        <button class="btn btn-default"><%= link_to 'Go', 'users' %></button>
                         </span>
                         </span>
                         <span>
                         <button class="btn btn-custom"><%= link_to 'login', 'login' %></a></button>
                         <button class="btn btn-custom"><%= link_to 'register', 'register' %></a></button>
-                        </span>    
+                        </span>
                     </div>
                 </form>
 
@@ -60,7 +59,7 @@
 <hr>
 
 
-        
+
 
 <script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 <script   src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js </script>
@@ -97,6 +96,5 @@
 
 <%= link_to "[All Users]", root_path %>
 
->>>>>>> d562e67f7887ad223a4ea8472dc1fc3ae6ddf3ae
 </body>
 </html>

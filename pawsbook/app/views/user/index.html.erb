@@ -2,15 +2,18 @@
 <h1>Users</h1>
 
 <% @users.each do |user| %>
-    <p><%= link_to user.name, user_path( user.id ) %></p>
+   <h2><%= link_to user.name, user_path( user.id ) %></h2>
 
     <!-- <img src = "<%= user.picture%>"> -->
     <% user.pictures.each do |pic| %>
-      <%= pic.id %>
+
+      <div class = "profile row center">
       <%= image_tag pic.name.url %>
     <% end %>
-    <h2><%= user.name %></h2>
     <p> <%= user.gender%></p>
+    <p> <%= user.animal%></p>
+  </div>
+
 <% end %>
 
 <%= link_to "[New User]", new_user_path %>

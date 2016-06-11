@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #8EA5BD;
+  color: #000;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  }
+
+body a {
+  color: #fff;
+}
+
+
+
+.profile img {
+  border-radius: 50%;
+  width: 300px;
+  max-height: auto;
+  border: 3px solid grey;
+  position: center;
+  margin: 40px;
+  padding: 20px;
+
+}
+
+.profile {
+  border: 3px solid grey;
+  max-width: 400px;
+  border-radius: 5px;
+  position: center;
+  justify-content: center;
+  align-items: center;
+  position: center;
+  float: 0;
+  margin: auto;
+  background-color: #F2FFFF;
+}
