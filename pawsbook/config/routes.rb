@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get 'users' => 'user#index'
+<<<<<<< HEAD
   get 'user/:id' => 'user#show', as: :user
 
   get 'users/new' => "user#new", as: :new_user
@@ -11,6 +12,12 @@ Rails.application.routes.draw do
 
 
 
+=======
+  get 'search' => 'user#search'
+  get 'login' => 'user#login'
+  get 'register' => 'user#register'
+
+>>>>>>> 77725e4f6f183e4953ba5715d75ecc719ec10eeb
   #root 'user#index'
   root 'user#landingspage'
 

@@ -2,10 +2,12 @@
 <html>
 <head>
   <title>Pawsbook</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <!-- Latest compiled and minified CSS -->
+<<<<<<< HEAD
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
@@ -38,5 +40,63 @@
 
 <%= link_to "[All Users]", root_path %>
 
+=======
+  </head>
+<body>
+
+<!--nav bar-->
+    <nav class="navbar navbar-default" class="col-md-6">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+              <img height="20" width="20" alt="Brand" src="assets/cat-paw.png">
+            </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="user/search">PawsBook</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                
+                <form class="navbar-form navbar-right">
+                    <div class="input-group">
+                    <span class="input-group-btn">
+                        <input type="text" name="keyword" placeholder="search..." class="form-control">
+                        <span>
+                        <button class="btn btn-default"><%= link_to 'Go', 'search' %></button>
+                        </span>
+                        </span>
+                        <span>
+                        <button class="btn btn-custom"><%= link_to 'login', 'login' %></a></button>
+                        <button class="btn btn-custom"><%= link_to 'register', 'register' %></a></button>
+                        </span>    
+                    </div>
+                </form>
+
+            </div>
+
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+
+<%= yield %>
+
+<hr>
+
+
+        
+
+<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+<script   src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js </script>
+>>>>>>> 77725e4f6f183e4953ba5715d75ecc719ec10eeb
 </body>
 </html>
