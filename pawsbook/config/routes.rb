@@ -55,4 +55,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   #end
+  root 'layout#hello'
 end
