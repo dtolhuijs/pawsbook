@@ -15,7 +15,7 @@ class UserController < ApplicationController
   def user_search
     post '/user/search' do
      @q = params[:query]
-     @users = read_users.select do |contact|
+     @users = read_users.select do |user|
        user[:name].include?(@q)
      end
      erb :'user/results'
